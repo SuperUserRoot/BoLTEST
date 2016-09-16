@@ -368,10 +368,10 @@ end
 function AutoUpdate()
 	local SCRIPT_NAME = "WARWIGGEL";
 	local UPDATE_HOST = "raw.githubusercontent.com";
-	local UPDATE_PATH = /SuperUserRoot/WARWIGGEL.lua".."?rand="..math.random(1,10000);
+	local UPDATE_PATH = /SuperUserRoot/BoLTEST/WARWIGGEL.lua".."?rand="..math.random(1,10000);
 	local UPDATE_FILE_PATH = SCRIPT_PATH.._ENV.FILE_NAME;
 	local UPDATE_URL = "https://"..UPDATE_HOST..UPDATE_PATH;
-	local ServerData = GetWebResult(UPDATE_HOST, "/SuperUserRoot/WARWIGGEL.version");
+	local ServerData = GetWebResult(UPDATE_HOST, "/SuperUserRoot/BoLTEST/WARWIGGEL.version");
 	if ServerData then
 		ServerVersion = type(tonumber(ServerData)) == "number" and tonumber(ServerData) or nil;
 		if ServerVersion then
